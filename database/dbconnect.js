@@ -1,9 +1,11 @@
 var mysql = require('mysql');
 var dbConnect = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'Lieutuanvu',
-    database: 'nien_luan'
+    connectionLimit: 100, //important
+  host: "fdb1029.awardspace.net",
+  user: "4268738_refooddb",
+  password: "Vominhkha27",
+  database: "4268738_refooddb",
+  debug: false,
 });
 
 dbConnect.connect((err) => {
